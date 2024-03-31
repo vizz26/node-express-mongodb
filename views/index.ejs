@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+</head>
+<body>
+    <h1>Employee Management</h1>
+
+    <h2>Employees</h2>
+    <ul>
+        <% for (const employee of employees) { %>
+            <li>
+                <strong>Name:</strong> <%= employee.name %> (<%= employee.email %>) - <%= employee.department %>
+            </li>
+        <% } %>
+    </ul>
+    <a href="/add">Add Employee</a>
+
+    </body>
+</html>
